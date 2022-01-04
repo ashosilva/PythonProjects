@@ -45,7 +45,7 @@ class HumanPlayer(Player):
 
         return val
 
-def GeniusComputerPlayer(Player):
+""" def GeniusComputerPlayer(Player):
     def __init__(self, letter):
         super().__init__(letter)
 
@@ -58,3 +58,4 @@ def GeniusComputerPlayer(Player):
         return square
 
     def minimax(self, square, player):
+ """
