@@ -3,6 +3,8 @@
 import random
 
 # ****** 2 ******
+
+
 def guess(x):
     random_number = random.randint(1, x)
     guess = 0

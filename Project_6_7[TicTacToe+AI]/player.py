@@ -44,3 +44,17 @@ class HumanPlayer(Player):
                 print('Invalid square. Try again')
 
         return val
+
+def GeniusComputerPlayer(Player):
+    def __init__(self, letter):
+        super().__init__(letter)
+
+    def get_move(self, game):
+        if len(game.available_moves()) == 9:
+            square = random.choice(game.available_moves())
+        else:
+            #selct square based off the minimax algorithm
+            square = self.minimax(game, self.letter)
+        return square
+
+    def minimax(self, square, player):
